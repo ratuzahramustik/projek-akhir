@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Shadows+Into+Light&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 2rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(231, 39, 45, 1);
+    font-family: 'Roboto', sans-serif;
+    z-index: 10000;
+}
+
+header .logo{
+    display: flex;
+}
+
+header .logo img{
+    margin-right: 20px;
+}
+
+header h3{
+    color: white;
+}
+
+header .navigation{
+    display: flex;
+}
+
+header .navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+header li{
+    margin-right: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header .icon{
+    margin-left: 60px;
+}
+
+header i{
+    color: white;
+}
+
+.banner{
+    background-image: url('banner.jpg');
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.banner .contentText{
+    color: white;
+}
+
+.banner h5{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Shadows Into Light',
+}
+
+.banner h2{
+    font-size: 80px;
+    font-family: 'Arvo', serif;
+}
+
+.banner h4{
+    color: #ffcc00;
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+}
+
+/* Reservation */
+.reservation{
+    display: flex;
+    padding: 0 3%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+}
+
+.reservation .resv1{
+    margin-right: 20px;
+}
+
+.reservation .resv2{
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+.reservation .resv2 h2{
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    margin-bottom: 5px;
+}
+
+.reservation .resv2 h5{
+    margin-bottom: 40px;
+}
+
+.reservation .resv2 .teks1{
+    margin-bottom: 20px;
+}
+
+.reservation .resv2 img{
+    margin-top: 30px;
+}
+
+.reservation .resv3{
+    background-color: black;
+    background-image: url('bg-knife.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.reservation .resv3 h3{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.reservation .resv3 input{
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.reservation .resv3 input, textarea{
+    width: 100%;
+}
+
+.resv3 textarea{
+    height: 200px;
+    padding: 10px 15px;
+}
+
+.reservation button{
+    background-color: #e7272d;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.reservation button:hover{
+    background-color: yellow;
+}
+
+/* Discount */
+.discount{
+    background-image: url('banner1.jpg');
+    color: white;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.discount h5{
+    font-family: 'Shadows Into Light';
+    font-size: 25px;
+}
+
+.discount h2{
+    font-size: 50px;
+}
+
+.discount .price{
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+}
+
+.discount .price li{
+    margin-right: 20px;
+}
+
+.discount .price li:nth-child(1){
+    color: #ffcc00;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.discount .price li:nth-child(2){
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.discount p{
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.discount button{
+    margin-top: 25px;
+    background-color: #e7272d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.discount button:hover{
+    background-color: yellow;
+}
+
+.menu{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.menu .menuTitle{
+    text-align: center;
+}
+
+.menu .menuTitle h5{
+    font-size: 25px;
+    color: #e7272d;
+    font-family: 'Shadows Into Light';
+}
+
+.menu .menuTitle h3{
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+
+.menu .category{
+    margin-top: 40px;
+}
+
+.menu .category ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li{
+    margin-right: 25px;
+    position: relative;
+}
+
+.menu ul li:hover::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #e7272d;
+    bottom: 0;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Arvo', serif;
+}
+
+.menu .foodMenu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    row-gap: 30px;
+}
+
+.menu .card{
+    max-width: 300px;
+    text-align: center;
+}
+
+.menu .card h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0;
+}
+
+.menu .card p{
+    color: gray;
+}
+
+.menu h4{
+    margin: 15px 0;
+    font-size: 25px;
+    color: #e7272d;
+}
+
+.testimonials{
+    background-image: url('testimonials.jpg');
+    color: white;
+    padding: 7rem 3%;
+}
+
+.testimonials .testimonialsTitle{
+    text-align: center;
+}
+
+.testimonials .testimonialsTitle h5{
+    font-size: 25px;
+    color: #cb9f07;
+    font-family: 'Shadows Into Light';
+}
+
+.testimonials .testimonialsTitle h3{
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+
+.testimonialsContent{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonialsContent .card{
+    max-width: 350px;
+}
+
+.testimonialsContent .card img{
+    width: 100%;
+}
+
+.testimonialsContent .card .teks{
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.testimonialsContent .card .teks p{
+    color: gray;
+    font-size: 14px;
+}
+
+.testimonialsContent .card .teks h3{
+    color: black;
+    margin-top: 10px;
+}
+
+.sponsored{
+    background-color: #e7272d;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+/* Team */
+.team{
+    margin-top: 50px;
+    padding: 0 3%;
+}
+.teamTitle{
+    text-align: center;
+}
+
+.teamTitle h5{
+    font-size: 25px;
+    color: #e7272d;
+    font-family: 'Shadows Into Light';
+}
+
+.teamTitle h3{
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+
+.teamContent{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teamContent .card{
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamContent .card h3{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.teamContent .card h4{
+    color: gray;
+}
+
+.teamContent .card ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.teamContent .card ul li{
+    margin-right: 20px;
+}
+
+.teamContent i{
+    color: #e7272d;
+    font-size: 20px;
+}
+
+/* Open */
+.open{
+    background-image: url('bg3.jpg');
+    color: white;
+    padding: 4rem 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    display: flex;
+}
+.open1{
+    margin-right: 90px;
+}
+
+.open1 h3, .open2 h3{
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    margin-bottom: 30px;
+}
+
+.open1 p, .open2 p{
+    font-size: 15px;
+    font-family: 'Arvo', serif;
+    margin-bottom: 9px;
+}
+
+.open1 span{
+    color: #ffcc00;
+}
+.open2 p:nth-child(3){
+    color: #ffcc00;
+}
+
+
+/* Contact */
+.contact .contactTitle{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact .contactTitle h5{
+    font-size: 25px;
+    color: #e7272d;
+    font-family: 'Shadows Into Light';
+}
+
+.contact .contactTitle h3{
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+}
+.contactContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.forms{
+    max-width: 400px;
+}
+
+.contact input{
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.contact input, textarea{
+    width: 100%;
+}
+
+.contact textarea{
+    height: 200px;
+    padding: 10px 15px;
+}
+
+.contact button{
+    background-color: #e7272d;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.contact button:hover{
+    background-color: yellow;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo{
+    display: flex;
+}
+
+footer img{
+    margin-right: 20px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer ul li{
+    margin-right: 20px;
+}
